@@ -1,0 +1,18 @@
+grade = []
+first = int(input("첫번째 성적: "))
+grade.append(first)
+second = int(input("두번째 성적: "))
+grade.append(second)
+third = int(input("세번째 성적: "))
+grade.append(third)
+forth = int(input("네번째 성적: "))
+grade.append(forth)
+fifth = int(input("다번째 성적: "))
+grade.append(fifth)
+min_grade = min(grade)
+grade.remove(min_grade)
+max_grade = max(grade)
+grade.remove(max_grade)
+average = sum(grade)/len(grade)
+
+print("평균 성적:",average)
